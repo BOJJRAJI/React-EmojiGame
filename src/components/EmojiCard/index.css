@@ -1,0 +1,19 @@
+.emoji {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff33;
+  border: 3px solid #ffffff30;
+}
+.emoji-image {
+  height: 80px;
+  width: 80px;
+}
+.emoji-button {
+  border: none;
+  background-color: transparent;
+}

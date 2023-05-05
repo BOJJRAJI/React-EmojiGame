@@ -1,0 +1,77 @@
+.navbar-winloss-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 30px;
+  background-color: #ffffff33;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+}
+.app-logo {
+  height: 20px;
+  width: 20px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+.logo-name {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.winLoss-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff33;
+  width: 85%;
+  border: 3px solid #ffffff30;
+  border-radius: 10px;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.win-loss-card {
+  display: flex;
+  flex-direction: row;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.score-text {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.result {
+  font-family: 'Roboto';
+  color: #6a59ff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.pay-button {
+  background-color: #ffce27;
+  color: #3d3d3d;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+.result-image {
+  height: 300px;
+  width: 200px;
+  margin-left: 20px;
+}
