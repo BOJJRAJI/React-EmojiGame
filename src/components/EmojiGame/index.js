@@ -3,17 +3,7 @@ import EmojiCard from '../EmojiCard'
 import NavBar from '../NavBar'
 import WinOrLoseCard from '../WinOrLoseCard'
 import './index.css'
-/* 
-Quick Tip 
 
-- Use the below function in the EmojiGame Component to shuffle the emojisList every time when an emoji is clicked.
-
-const shuffledEmojisList = () => {
-  const {emojisList} = this.props
-  return emojisList.sort(() => Math.random() - 0.5)
-}
-
-*/
 
 class EmojiGame extends Component {
   state = {topScore: 0, clicksData: [], isGameProgress: true}
@@ -61,14 +51,17 @@ class EmojiGame extends Component {
 
     if (isEmojiPresent) {
       this.finishGameAndSetTopScore(clicksDataLength)
-    } else if (emojisList.length - 1 === clicksDataLength) {
-      this.finishGameAndSetTopScore(emojisList.length)
     } else {
+      if (emojisList.length - 1 === clicksDataLength) {
+        this.finishGameAndSetTopScore(emojisList.length)
+      }
       this.setState(prevState => ({
         clicksData: [...prevState.clicksData, id],
       }))
     }
   }
+
+ 
 
   renderEmojies = () => {
     const shuffledEmojis = this.shuffledEmojisList()
